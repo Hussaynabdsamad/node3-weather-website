@@ -1,4 +1,4 @@
-console.log('Client-side javascript')
+
 const vale =  document.querySelector('input')
 document.querySelector('button').addEventListener('click', (e) => {
   e.preventDefault()

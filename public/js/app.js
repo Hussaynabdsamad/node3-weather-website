@@ -3,7 +3,7 @@ const vale =  document.querySelector('input')
 document.querySelector('button').addEventListener('click', (e) => {
   e.preventDefault()
  let address = vale.value
- fetch('http://localhost:3000/weather?address=' + address).then((response) => {
+ fetch('/weather?address=' + address).then((response) => {
     document.getElementById('quer').innerHTML = 'Loading...'
     document.getElementById('quer2').innerHTML = ''
 

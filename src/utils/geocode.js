@@ -28,7 +28,7 @@ const geocode = (address, callback) => {
            } else if (body.message === "wrong latitude") {
                callback(body.message, undefined)
            } else {
-               callback(undefined, `The temperature is ${body.main.temp} and it is ${body.weather[0].description}`)
+               callback(undefined, `The temperature is ${body.main.temp} and it is ${body.weather[0].description}. The high is ${body.main.temp_max}, and the low is ${body.main.temp_min}`)
            }
        }) 
    }

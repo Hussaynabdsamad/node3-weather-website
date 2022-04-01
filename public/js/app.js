@@ -17,8 +17,10 @@ document.querySelector('button').addEventListener('click', (e) => {
 
         
      }
-    })
- }).catch(err => console.log(err)) 
+    }) 
+ }).catch(err =>  document.getElementById('quer').innerHTML = error)
+
+ 
 
 })
 
